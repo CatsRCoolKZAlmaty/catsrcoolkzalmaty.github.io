@@ -1,0 +1,94 @@
+/* Body and Font Style */
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #2d2d2d;
+    padding: 10px;
+    position: fixed; /* Fixed position for the navbar */
+    top: 0; /* Stick it to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+    display: flex; /* Flexbox to arrange the logo and navbar items */
+    align-items: center; /* Vertically center items */
+}
+
+/* Navbar Logo - Positioned to the left */
+.navbar-logo {
+    margin-right: auto; /* Push the logo to the left */
+}
+
+.logo {
+    height: 40px; /* Adjust the logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar Styling */
+nav {
+    flex-grow: 1; /* Allow the navbar to take up the remaining space */
+    display: flex;
+    justify-content: center; /* Center navbar items */
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align navbar items in a row */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Main content padding to avoid being hidden under navbar */
+main {
+    padding-top: 60px; /* Adjust to the height of your navbar */
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    header, footer {
+        background-color: #333;
+    }
+
+    a {
+        color: #82aaff;
+    }
+    
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
